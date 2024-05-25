@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "387764571331",
+    "project_id": "flutterfinal-f35a9",
+    "storage_bucket": "flutterfinal-f35a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387764571331:android:5872787b95f82c632b2676",
+        "android_client_info": {
+          "package_name": "com.example.final_exam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdXfzJJ1dj9gn07tSoF67UwupThyBl6vQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
