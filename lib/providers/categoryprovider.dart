@@ -15,6 +15,7 @@ class ProductNotifier extends _$ProductNotifier {
 
   void setProductCategory(String category) {
     category = category;
+    productsList = post();
   }
 
   Stream<List<Product>> post() {

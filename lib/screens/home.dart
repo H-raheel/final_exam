@@ -9,7 +9,8 @@ class Home extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final dataNotifier = ref.watch(productNotifierProvider);
+    final dataNotifier =
+        ref.watch(productNotifierProvider.notifier).productsList;
     return Scaffold(
         body: SafeArea(
       child: Container(
@@ -49,8 +50,7 @@ class Home extends ConsumerWidget {
             ),
             Expanded(
               child: StreamBuilder<List<Product>>(
-                stream:
-                    ref.watch(productNotifierProvider.notifier).productsList,
+                stream: dataNotifier,
                 builder: (context, snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
                     return Center(child: CircularProgressIndicator());
