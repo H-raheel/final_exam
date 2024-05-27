@@ -10,6 +10,7 @@ class ProductNotifier extends _$ProductNotifier {
   Stream<List<Product>>? productsList;
   String category = "";
   String build() {
+    productsList = post();
     return "";
   }
 
